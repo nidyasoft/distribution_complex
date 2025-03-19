@@ -5,6 +5,64 @@ app_description = "Distribution Management Complex"
 app_email = "ideenemium@gmail.com"
 app_license = "mit"
 
+app_include_js = [
+    "/assets/distribution_complex/js/customer_quick_entry_custom.js"
+]
+
+fixtures = [
+    {
+        "doctype": "DocType",
+        "filters": [
+            ["name", "in", [
+                "Sales Target Assignment",           # Doctype اصلی
+                "Brand Target",                      # Child Doctype‌ها
+                "Item Group Target",
+                "Supplier Target",
+                "Sales Amount Target",
+                "Sales Quantity Target",
+                "Successful Invoices Target",
+                "Deduction",
+                "Brand Target Calculation",
+                "Item Group Target Calculation",
+                "Supplier Target Calculation",
+                "Sales Amount Target Calculation",
+                "Sales Quantity Target Calculation",
+                "Successful Invoices Target Calculation",
+                "Deduction Calculation"
+            ]]
+        ]
+    }
+]
+
+#doc_events = {
+#    "Sales Target Assignment": {
+#        "after_save": "distribution_complex.sales_target_utils.calculate_commission"
+#    }
+#}
+#doc_events = {
+#    "Sales Target Assignment": {
+#        "after_save": "distribution_complex.custom_scripts.calculate_sales_targets"
+#    }
+#}
+doc_events = {
+    "Sales Target Assignment": {
+        "after_save": "distribution_complex.sales_target_utils.calculate_commission"
+    }
+}
+
+api = [
+    {
+        "methods": [
+            "distribution_complex.sales_target_utils.calculate_commission_manually"
+        ]
+    }
+]
+
+#doc_events = {
+#    "Sales Target Assignment": {
+#        "before_save": "distribution_complex.commission.calculate_commission"
+#    }
+#}
 # Apps
 # ------------------
 
