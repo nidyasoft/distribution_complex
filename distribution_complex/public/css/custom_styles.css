@@ -1,0 +1,9 @@
+/* استایل برای فیلد final_commission */
+.frappe-control[data-fieldname="final_commission"] .control-value {
+    font-size: 25px; /* فونت بزرگ‌تر */
+    text-align: center; /* وسط‌چین */
+    color: red; /* رنگ متن قرمز */
+    background-color: rgb(255, 255, 255); 
+    padding: 5px; /* فاصله داخلی برای بهتر دیده شدن */
+    display: block; /* برای اطمینان از وسط‌چین شدن */
+}
