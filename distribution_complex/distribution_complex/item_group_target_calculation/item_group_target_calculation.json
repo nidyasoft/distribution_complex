@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "item_group_target_calculation",
+ "creation": "2025-03-18 01:20:47.432414",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hota",
+  "target_type",
+  "target_value",
+  "actual_value",
+  "commission"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hota",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "target_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Target Type",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Target Value",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "actual_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Value",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Commission",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-23 11:01:51.170895",
+ "modified_by": "Administrator",
+ "module": "Distribution Complex",
+ "name": "Item Group Target Calculation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
